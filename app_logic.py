@@ -1,0 +1,13 @@
+def play_game(human_first, sticks):
+    current_player=human_first
+    while sticks>0:
+        if current_player:
+            taken=human_turn(sticks)
+        else:
+            taken=computer_turn(sticks)
+        sticks-=taken
+        current_player = not current_player
+        if check_winner(sticks):
+            winner= "Вы победили!" if current_player else: "Победил компьютер"
+            print(winner)
+            break
