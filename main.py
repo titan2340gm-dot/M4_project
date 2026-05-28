@@ -2,7 +2,7 @@ import random
 from app_logic import play_game, check_winner
 from utils import human_turn, computer_turn
 
-def start game():
+def start_game():
     sticks=21
     turn =input("Хотите ходить первыми? (да/нет): ").strip().lower()
     if turn=="да":
