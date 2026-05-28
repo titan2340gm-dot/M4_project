@@ -11,3 +11,7 @@ def play_game(human_first, sticks):
             winner= "Вы победили!" if current_player else: "Победил компьютер"
             print(winner)
             break
+def check_winner(sticks_left):
+    if sticks_left==0:
+        return True
+    return False
